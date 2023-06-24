@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Book Table</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+      <a href="" class="nav-link">Libray System</a>
+      <div class="nav-div">
+        <a href="#book">Books</a>
+        <a href="#register">Register</a>
+        <a href="">Contact Us</a>
+        <a href="">Logout</a>
+      </div>
+    </nav>
+
+    <div class="book" id="book">
+        <h1>Books</h1>
+        <table class="outer-book-table">
+            <thead  >
+                <th>Book Id</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Availability</th>
+            </thead>
+
+            <tbody>
+                 <tr>
+                    <td>1</td>
+                    <td>
+                        <table class="inner-book-table">
+                            <h4><a href="#">Introduction to Computer</a></h4>
+                            <tr>
+                                <td>Publication Date: 2011</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count: 250 </td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 123-4567890123</td>
+                            </tr>
+
+                        </table>
+                    </td>
+                    <td>Amit Garg</td>
+                    <td>Eduction non-fiction</td>
+                    <td>Available</td>
+                 </tr>
+                 <tr>
+                    <td>2</td>
+                    <td>
+                        <table class="inner-book-table">
+                            <h4><a href="#">The New Harbrace Guide</a></h4>
+                            <tr>
+                                <td>Publication Date: 2021</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count: 576 </td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 9780357509173</td>
+                            </tr>
+
+                        </table>
+                    </td>
+                    <td>Cheryl Glenn</td>
+                    <td>Education / Language Experience Approach</td>
+                    <td>Not Available</td>
+                 </tr>
+                 <tr>
+                    <td>3</td>
+                    <td>
+                        <table class="inner-book-table">
+                            <h4><a href="#">Understanding MARC Bibliographic</a></h4>
+                            <tr>
+                                <td>Publication Date: 1994</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count: 29 </td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 9780844408200</td>
+                            </tr>
+
+                        </table>
+                    </td>
+                    <td>Betty Furrie</td>
+                    <td>Reference work</td>
+                    <td>Available</td>
+                 </tr>
+                 <tr>
+                    <td>4</td>
+                    <td>
+                        <table class="inner-book-table">
+                            <h4><a href="#">Oscar and Lucinda</a></h4>
+                            <tr>
+                                <td>Publication Date: 2010</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count: 635 </td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 9780571267132</td>
+                            </tr>
+
+                        </table>
+                    </td>
+                    <td>Peter Carey</td>
+                    <td>Novel, Historical Fiction</td>
+                    <td>Available</td>
+                 </tr>
+                 <tr>
+                    <td>5</td>
+                    <td>
+                        <table class="inner-book-table">
+                            <h4><a href="#">The Boy in the Striped Pyjamas</a></h4>
+                            <tr>
+                                <td>Publication Date: 2016</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count: 352 </td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 9781448198030</td>
+                            </tr>
+
+                        </table>
+                    </td>
+                    <td>John Boyne</td>
+                    <td>Novel, Children's literature, Historical Fiction, Fable, historical novel, Historical drama</td>
+                    <td>Not Available</td>
+                 </tr>
+                 <tr>
+                    <td>6</td>
+                    <td>
+                        <table class="inner-book-table">
+                            <h4><a href="#">The Google Story</a></h4>
+                            <tr>
+                                <td>Publication Date: 2006</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count:326 </td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 9780553383669</td>
+                            </tr>
+
+                        </table>
+                    </td>
+                    <td>David A. Vise, Mark Malseed</td>
+                    <td> Non-fiction</td>
+                    <td>Available</td>
+                 </tr>
+           </tbody>
+        </table>
+    </div>
+
+    <div class="register" id="register">
+        <h1>Register</h1>
+        <form action="/submit" method="post">
+          <label for="fname">First Name:</label> <br>
+          <input type="text" id="fname" class="color-change"  required><br>
+
+          <label for="lname" >Last Name:</label> <br>
+          <input type="text" id="lname" class="color-change" required><br>
+
+          <label for="dob">Date Of Birth:</label> <br>
+          <input type="date" id="dob"  required><br>
+
+          <label for="age">Age:</label> <br>
+          <input type="number" id="age" min="5" max="100" required><br>
+
+          <label for="email">Email:</label> <br>
+          <input type="email" id="email" class="color-change" required><br>
+
+          <label for="password">Password:</label> <br>
+          <input type="password" id="password"  required><br>
+
+          <label for="confirm-password">Confirm Password:</label> <br>
+          <input type="password" id="confirm-password"  required><br>
+
+          <button type="submit" >Register</button><br>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
